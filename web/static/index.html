@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TCP File Transfer</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header>
+  <h1>📡 TCP File Transfer</h1>
+  <div class="status" id="status">Подключение…</div>
+</header>
+
+<main>
+  <section class="dropzone" id="dropzone">
+    <div class="dz-inner">
+      <div class="dz-icon">⬆️</div>
+      <p><b>Перетащи файлы сюда</b></p>
+      <p class="dz-hint">или <label class="link">выбери<input type="file" id="fileInput" multiple hidden></label></p>
+    </div>
+  </section>
+
+  <section class="progress-list" id="progressList"></section>
+
+  <section class="files">
+    <h2>Файлы на сервере <span id="filesCount" class="badge">0</span></h2>
+    <ul class="file-list" id="fileList"></ul>
+  </section>
+</main>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

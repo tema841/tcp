@@ -1,2 +1,7 @@
 ﻿build/
 *.txt
+web/.venv/
+web/uploads/
+web/__pycache__/
+*.pyc
+!web/requirements.txt
